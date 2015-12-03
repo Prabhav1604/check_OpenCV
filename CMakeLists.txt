@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( check_OpenCV )
+find_package( OpenCV REQUIRED )
+add_executable( play vidread.cpp )
+target_link_libraries( play  ${OpenCV_LIBS} )
